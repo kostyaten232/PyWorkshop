@@ -1,3 +1,1 @@
-print('%')
-print('f-strings')
-print('printf')
+print('a')
