@@ -1,2 +1,1 @@
-print(20000*0.15
-     )
+['Doctor Who', 'Friends']
