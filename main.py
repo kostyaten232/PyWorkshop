@@ -1,7 +1,17 @@
-word2 = ['p', 'r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n', 'g', 'l', 'a', 'n', 'g', "u", "a", "g", "e"]
-print(word2[2])
-print(word2[5])
-print(word2[8])
-print(word2[15])
-print(word2[16])
-print(word2[18])
+student1 = ['Денис', 'Дима', 'Ваня', 'Дима', 'Дима', 'Лёха', 'Вова', 'Вадим', 'Богдан', 'Юра', 'Антон', 'Артем', 'Костя']
+print(student1)
+from random import randint
+lst_english = [randint(25, 50) for _ in range(13)]
+print(lst_english)
+
+
+student2 = ['Денис - 38', 'Дима - 44', 'Ваня - 27', 'Дима - 33', 'Дима - 47', 'Лёха - 49', 'Вова - 42', 'Вадим - 39', 'Богдан - 47', 'Юра - 45', 'Антон - 31', 'Артем - 34', 'Костя - 49']
+print(student2)
+from random import randint
+lst_physics = [randint(25, 50) for _ in range(13)]
+print(lst_physics)
+
+
+student3 = ['Денис - 38', 'Дима - 44', 'Ваня - 27', 'Дима - 33', 'Дима - 47', 'Лёха - 49', 'Вова - 42', 'Вадим - 39', 'Богдан - 47', 'Юра - 45', 'Антон - 31', 'Артем - 34', 'Костя - 49']
+
+    
