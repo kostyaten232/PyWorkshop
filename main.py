@@ -1,7 +1,7 @@
-my_list = [3, 9, 27, 81, 243, 729, 2187]
-print(my_list[:])
-print(my_list[2:0:-3])
-print(my_list[-1:])
-print(my_list[2:-1:-3])
-print(my_list[7])
-
+word2 = ['p', 'r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n', 'g', 'l', 'a', 'n', 'g', "u", "a", "g", "e"]
+print(word2[2])
+print(word2[5])
+print(word2[8])
+print(word2[15])
+print(word2[16])
+print(word2[18])
