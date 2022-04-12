@@ -75,3 +75,174 @@ print(mx)
 
 
 
+from random import randint
+lst = [randint(0, 10) for _ in range(10)]
+lst.sort()
+print(lst)
+mx = 0
+for n in lst:
+  if n > mx:
+    mx = n
+
+print(mx)
+
+
+
+
+from random import randint
+lst = [randint(0, 10) for _ in range(10)]
+lst.reverse()
+print(lst)
+mn = 0
+for n in lst:
+  if n < mn:
+    mn = n
+
+print(mn)
+
+
+
+hard
+
+
+
+
+no
+
+
+
+
+1)We look for the middle in the array 
+2)Take any number and add 1 to it. 
+2.1)If the number turns out to be less than or equal to any number, then this is not the maximum number.
+2.2)If there is no number <= number +1, then this is the maximum number.
+
+
+1. creating an array with random numbers;
+2. Sorting the numbers;
+3.Creating a condition
+
+
+
+
+
+
+# map
+
+  
+
+nums = [n for n in range(10)]
+# double_n = [n * 2 for n in nums]
+print(nums)
+# print(double_n)
+
+def doubler(x):
+  return x * 2
+
+double_numbers = list(map(doubler, nums))
+print(double_numbers)
+
+a, b = map(int, (input(), input()))
+print(a, b)
+
+
+
+
+
+nums = [n for n in range(10)]
+# # double_n = [n * 2 for n in nums]
+# print(nums)
+# # print(double_n)
+
+# def doubler(x):
+#   return x * 2
+
+# double_numbers = list(map(doubler, nums))
+# print(double_numbers)
+
+# a, b = map(int, (input(), input()))
+# print(a, b)
+
+
+double_numbers = list(map(lambda x: x * 2, nums))
+
+print(double_numbers)
+
+
+
+
+
+
+double_numbers = list(map(lambda x: x * 2, nums))
+
+print(double_numbers)
+
+
+x_list = [1, 2, 4]
+y_list = [4, 6, 8]
+z_list = [9, 10, 10]
+
+res = list(map(lambda x, y, z: x + y + z, x_list, y_list, z_list))
+print(res)
+
+
+
+
+
+
+#filter
+
+odd_numbers = list(filter(lambda x: x % 2, nums))
+print(odd_numbers)
+
+
+
+
+# map / takes a func
+
+
+
+
+
+# -----------
+nums = [n for n in range(10)]
+double_nums = [n * 2 for n in nums]
+print(nums)
+print(double_nums)
+
+# -----------
+def doubler(x):
+  return x * 2
+
+double_numbers = list(map(doubler, nums))
+print(double_numbers)
+
+# -----------
+a, b = map(int, (input(), input()))
+print(a, type(a), b, type(b))
+
+# -----------
+double_numbers = list(map(lambda x: x * 2, nums))
+print(double_numbers)
+
+# -----------
+x_list = [1, 2, 4]
+y_list = [4, 6, 8]
+z_list = [9, 10, 10]
+
+res = list(map(lambda x, y, z: x + y + z, x_list, y_list, z_list))
+print(res)
+
+
+#filter / takes a Boolean func (True or False)
+odd_numbers = [n for n in nums if n % 2]
+print(odd_numbers)
+
+# -----------
+odd_numbers = list(filter(lambda x: x % 2, nums))
+print(odd_numbers)
+
+#--------------------------------------------------
+# map and filter can be replaced with list comprehention
+# which is more PYTHONIC yet
+# map and filter are generally more efficient and faster
