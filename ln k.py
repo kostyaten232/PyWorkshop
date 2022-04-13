@@ -13,6 +13,7 @@ lst = [randint(0, 100) for _ in range(100)]
 lst.sort()
 if lst/5 in 
 
+
 Денис - 1
 Дима - 2
 Ваня - 3
