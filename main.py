@@ -1,3 +1,8 @@
-TypeError -> int('twenty')
-ValueError -> len(42)
-ZeroDivisionError -> print(7 - 7 / 0 + 1)
+first = [400]
+second = [400]
+if first > second:
+  print("The first one wins")
+elif first < second:
+  print('The second one wins')
+else:
+  print('Draw')
