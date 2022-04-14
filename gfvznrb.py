@@ -93,3 +93,162 @@ print(int('five'))  # OBJ type is ok but value inappropriate
 # if using parent name it will cover ALL exception in it
 # so 
 # RuntimeError will include both exceptions in it
+# Handling Exceptions
+
+# list
+# https://docs.python.org/3/library/exceptions.html
+
+a = 5
+b = 2
+
+
+try:
+  result = a / b
+except ZeroDivisionError:
+  print('Error')
+else:
+  print('The result is ', result)
+finally:
+  print("Thank you for using the service")
+
+
+
+
+# Handling Exceptions
+
+# list
+# https://docs.python.org/3/library/exceptions.html
+
+# Handling Exceptions
+
+# list
+# https://docs.python.org/3/library/exceptions.html
+import sys
+
+
+a = 5
+b = 0
+
+
+try:
+  result = a / b
+except Exception as err:
+  print('Error', err.__class__.__name__)
+else:
+  print('The result is ', result)
+finally:
+  print("Thank you for using the service")
+
+
+
+
+
+
+
+
+
+# Handling Exceptions
+
+# list
+# https://docs.python.org/3/library/exceptions.html
+import sys
+
+
+a = 5
+b = 0
+
+
+try:
+  result = a / b
+except Exception as err:
+  type, obj, tr = sys.exc_info()
+  line = tr.tb_lineno
+  print('Error', err.__class__.__name__, line)
+else:
+  print('The result is ', result)
+finally:
+  print("Thank you for using the service")
+
+
+
+
+
+
+
+# Handling Exceptions
+
+# list
+# https://docs.python.org/3/library/exceptions.html
+
+a = 5
+b = 2
+
+print(a / b)  # work as expected
+
+
+a = 5
+b = 0
+
+print(a / b)  # ZeroDivision
+
+# solution
+try:
+  result = a / b
+except ZeroDivisionError as err:
+  print('0 Error', err)  # err is exception description
+else:
+  print('The result is ', result)
+finally:
+  print("Thank you for using the service")
+
+  
+a = 5
+b = 'five'
+
+print(a / b)  # TypeError
+
+# solution
+try:
+  result = a / b
+except ZeroDivisionError as err:
+  print('0 Error', err)  # err is exception description
+except TypeError as err:
+  print('T Error', err)  # err is exception description
+else:
+  print('The result is ', result)
+finally:
+  print("Thank you for using the service")
+
+# line num of exception
+import sys 
+e_type, e_object, e_traceback = sys.exc_info()
+e_line = e_traceback.tb_lineno
+
+
+# exception name
+# use __class__.__name__ called on err object
+
+# multiple exceptions
+# except (ZeroDivisionError, TypeError) as err:
+
+
+
+
+# Binary Search
+
+from random import randint as rr
+
+n = 20
+array = [n for n in range(n + 1)]
+
+print(array)
+
+def rotate(array):
+  for _ in range(rr(1, len(array))):
+    # array.append(array.pop(0))
+    array.insert(0, array.pop())
+  return array
+
+array = rotate(array)
+
+print(array)

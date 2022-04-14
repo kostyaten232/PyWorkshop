@@ -11,7 +11,7 @@ student3 = ['28', '28', 'Ваня - 35', 'Дима - 42', 'Дима - 27', 'Лё
 from random import randint
 lst = [randint(0, 100) for _ in range(100)]
 lst.sort()
-if lst/5 in 
+if lst/5 or lst
 
 
 Денис - 1

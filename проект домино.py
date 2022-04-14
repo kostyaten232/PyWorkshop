@@ -22,12 +22,15 @@ stock = stock[on_hands * 2 - 1:]
 next_one = 'computer' if len(computer) > len(player) else 'player'
 
 print('Stock pieces: {}\n\
-    Computer pieces: {}\n\
-      Player pieces: {}\n\
-      Domino snake: [{}]\n\
-             Status: {}'.\
+Computer pieces: {}\n\
+Player pieces: {}\n\
+Domino snake: [{}]\n\
+Status: {}'.\
              format(stock, computer, player, snake, next_one))
 
-
+if next_one == 'player':
+    print("It's your turn to make a move. Enter your command");
+else:
+    print("Computer is about to make a move");
 
 

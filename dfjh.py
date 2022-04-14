@@ -320,3 +320,70 @@ for i, name in enumerate(names):
 # or
 for i, name in enumerate(names, start=1):
   print(i, name)
+
+
+
+
+
+
+
+
+
+
+import sys
+
+a = 5
+b = 0
+
+
+try:
+  result = a / b
+except Exception as err:
+  type, obj, tr = sys.exc_info()
+  line = tr.tb_lineno
+  print('Error', err.__class__.__name__, line)
+else:
+  print('The result is ', result)
+finally:
+  print("Thank you for using the service")
+
+
+
+
+
+import sys
+
+a = 5
+b = 0
+
+
+try:
+  result = a / b
+except Exception as err:
+  type, obj, tr = sys.exc_info()
+  line = tr.tb_lineno
+  print('Error', err.__class__.__name__, line)
+else:
+  print('The result is ', result)
+finally:
+  print("Thank you for using the service")
+
+
+
+
+
+import sys
+
+a = 5
+b = 2
+
+try:
+  resalt = a / b
+except Exciption as err:
+  type, obj, tr = sys.exc_info()
+  line = tr.tb_lineno
+  print('Error', err.__class__.__name__, line)
+else:
+  print('The result is ', resalt)
+finally:
+  print("Thank you for using the service")
