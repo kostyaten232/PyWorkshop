@@ -1,18 +1,6 @@
-from random import random as rr
-from linear import linear
-from binary import binary
-
-n = 10_000
-array = [n for n in range(n + 1)]
-
-
-def rotate(array):
-    for _ in range(rr(1, len(array))):
-        array.append(array.pop(0))
-        return array
-
-
-array = rotate(array)
-
-print(linear(array))
-print(binary(array, 0, len(array) - 1))
+N = int (input ('Введите число: '))
+ 
+for d in range (1, N // 2 + 1) :
+  if N % d == 0 :
+    print (d, ' ', sep = '', end = '')
+print (N)
