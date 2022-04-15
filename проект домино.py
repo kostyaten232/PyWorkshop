@@ -18,6 +18,10 @@ if randint(1, 2) == 2:
 
 stock = stock[on_hands * 2 - 1:]
 
+print('=' * ord('F'))
+print('Stock size: %s\nComputer pieces: %s\n\n%s\n' % (len(stock), len(computer), snake))
+print('Your pieces:\n{}'.format('\n'.join(list(f'{}))))
+
 next_one = 'computer' if len(computer) > len(player) else 'player'
 
 print('Stock pieces: {}\n\
