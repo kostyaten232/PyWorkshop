@@ -1,11 +1,9 @@
-a = -2
-b = 10
-c = a / b
-
-if c >= 0:
-    print(c)
-else:
-    raise Exception('Something went wrong!')
+class LessThanError(Exception):
+    def X(self):
+        return 'There is an error!'
 
 
-custom error Something went wrong!
+
+x = 100
+if x < 101:
+    raise LessThanError
