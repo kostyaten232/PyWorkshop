@@ -68,6 +68,14 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
 
 [[package]]
+name = "shuffle"
+version = "0.9"
+description = "Simulate Human Card Shuffling Techniques for use with Python Lists"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "urllib3"
 version = "1.26.9"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -83,7 +91,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "27028508cba5dd50d9d28a045ce65ed1312f8665be3ecab562652cac27458b98"
+content-hash = "6ec10e75204c8c97d148f99829c50d2eb4e04af67c8d9e24c2e0d4f8059b9d3e"
 
 [metadata.files]
 binary = [
@@ -187,6 +195,9 @@ pygame = [
 requests = [
     {file = "requests-2.27.1-py2.py3-none-any.whl", hash = "sha256:f22fa1e554c9ddfd16e6e41ac79759e17be9e492b3587efa038054674760e72d"},
     {file = "requests-2.27.1.tar.gz", hash = "sha256:68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61"},
+]
+shuffle = [
+    {file = "shuffle-0.9.tar.gz", hash = "sha256:df599946faa144baf84e141dbf99da75421617fdf1f82d60374a1f3d01b273b6"},
 ]
 urllib3 = [
     {file = "urllib3-1.26.9-py2.py3-none-any.whl", hash = "sha256:44ece4d53fb1706f667c9bd1c648f5469a2ec925fcf3a776667042d645472c14"},

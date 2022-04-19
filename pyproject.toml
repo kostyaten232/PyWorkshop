@@ -10,6 +10,7 @@ numpy = "^1.22.2"
 binary = "^1.0.0"
 pygame = "^2.1.2"
 requests = "^2.27.1"
+shuffle = "^0.9"
 
 [tool.poetry.dev-dependencies]
 
