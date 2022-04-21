@@ -114,3 +114,121 @@ rev_weights = {v: k for k, v in weights.items()}
 
 max_key = stock[rev_weights[max_value]]
 print(max_key)
+
+
+
+
+
+
+
+
+
+
+
+stock = ()
+stock = [[0, 6], [3, 4], [1, 4], [4, 5], [3, 5], [1, 2], [1, 3], [0, 1], [5, 6], [6, 6], [0, 4], [1, 1], [2, 3], [0, 3], [3, 3], [2, 4], [1, 5], [2, 6], [3, 6], [0, 2], [4, 4]]
+
+count = 0
+
+weights = {
+  0: (count == sum(map(lambda item: item == 0, stock))
+        print('0:', count)),
+  1: 7,
+  2: 5,
+  3: 8,
+  4: 7,
+  5: 4,
+  6: 6
+}
+
+max_value = max(weights.values())
+print(max_value)
+
+rev_weights = {v: k for k, v in weights.items()}
+
+max_key = stock[rev_weights[max_value]]
+print(max_key)
+
+
+
+
+
+'hello'.encode()
+data = data.decode()
+
+import socket
+
+
+with socket.socket() as client_socket:
+
+  hostname = '127.0.0.1'
+  port = 5000
+  
+  client_socket.connect((hostname, port))
+  
+  data = 'Wake up Neo'
+  
+  client_socket.send(data.encode())
+  
+  buffer = 1024
+  response = client_socket.recv(buffer)
+  response = response.decode()
+  
+  print(response)
+
+
+
+
+from functools import reduce
+from collections import Counter
+
+
+stock = [[0, 6], [3, 4], [1, 4], [4, 5], [3, 5], [1, 2], [1, 3], [0, 1], [5, 6], [6, 6], [0, 4], [1, 1], [2, 3], [0, 3], [3, 3], [2, 4], [1, 5], [2, 6], [3, 6], [0, 2], [4, 4]]
+
+
+new_stock = reduce(lambda x, y: x + y, stock)
+print(new_stock)
+
+
+new_new_stock = [item for sublist in stock for item in sublist]
+print(new_new_stock)
+
+
+
+
+
+from functools import reduce
+from collections import Counter
+
+
+stock = [[0, 6], [3, 4], [1, 4], [4, 5], [3, 5], [1, 2], [1, 3], [0, 1], [5, 6], [6, 6], [0, 4], [1, 1], [2, 3], [0, 3], [3, 3], [2, 4], [1, 5], [2, 6], [3, 6], [0, 2], [4, 4]]
+
+
+new_stock = reduce(lambda x, y: x + y, stock)
+print(new_stock)
+
+counter = Counter(new_stock)
+print(counter[0])
+
+print('Count:'
+    
+    '0:'print(counter[0])
+    '1:'
+  print(counter[1)]
+    '2:'
+    '3:'
+    '4:'
+    '5:'
+    '6:'
+)
+
+
+
+
+pcs = [2, 4]
+
+summ = 0
+for e in pcs:
+  summ += counter[e]
+
+print(summ)
